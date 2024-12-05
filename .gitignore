@@ -1,0 +1,12 @@
+node_modules
+project/install/electron-build
+dist
+._*
+*.pcm
+*.msi
+.vscode
+yarn.lock
+yarn-*
+package-*
+logs
+tmp

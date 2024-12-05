@@ -1,0 +1,33 @@
+appId: "tts-master"
+productName: "tts"
+copyright: "Copyright © 2024 ${author}"
+directories:
+  output: "project/install/electron-build"
+# win: 
+#   target: 
+#     - "nsis"
+#   icon: "project/images/logo.png"
+#   requestedExecutionLevel: "requireAdministrator"
+#   executableName: "tts-master"
+linux:
+  target: "tt.deb"
+  icon: "project/images/logo.png"
+# nsis:
+#   installerIcon: "ui/public/favicon.ico"
+#   artifactName: "tts-master-${version}-${os}-${arch}-Release.${ext}"
+#   shortcutName: "tts"
+#   uninstallerIcon: "ui/public/favicon.ico"
+#   uninstallDisplayName: "tts"
+#   oneClick: false
+#   perMachine: true
+#   allowToChangeInstallationDirectory: true
+#   multiLanguageInstaller: true
+#   installerLanguages:
+#     - "en_US"
+#     - "zh_CN"
+files:
+  - "ui/build/**/*"
+  # - "installer/flv-nginx/**/*"
+  - "main.js"
+  - "src/*"
+extends: null
